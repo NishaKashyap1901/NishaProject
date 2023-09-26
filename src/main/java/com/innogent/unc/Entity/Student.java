@@ -27,6 +27,16 @@ public class Student {
     public Student() {
     }
     @OneToMany(mappedBy = "student")
+    private List<Course> courseList;
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
+    }
+
+
     public List<Student> get()
 {
     return null;
